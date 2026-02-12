@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cataleg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:noNamespaceSchemaLocation="cataleg.xsd">
+  
+  <single codi="S123">
+    <titol>Bohemian Rhapsody</titol>
+    <pais>Reino Unido</pais>
+    <idioma>Inglés</idioma>
+    <genere>Rock and Roll</genere>
+    <grup>Queen</grup>
+    <membres>
+      <membre sexe="home">
+        <nom>Freddie Mercury</nom>
+      </membre>
+    </membres>
+    <durada>5:55</durada>
+  </single>
+
+  <album codi="A456">
+    <titol>Thriller</titol>
+    <pais>USA</pais>
+    <idioma>Inglés</idioma>
+    <genere>Pop</genere>
+    <grup>Michael Jackson</grup>
+    <membres>
+      <membre sexe="home">
+        <nom>Michael Jackson</nom>
+      </membre>
+    </membres>
+    <numero_cançons>1</numero_cançons>
+    <titols_cançons>
+      <canço numero="1">
+        <titol_canço>Billie Jean</titol_canço>
+        <durada_canço>4:54</durada_canço>
+      </canço>
+    </titols_cançons>
+  </album>
+
+</cataleg>
