@@ -1,0 +1,38 @@
+{
+  "$schema": "https://example.com/customer.schema.json",
+  "customer": {
+    "cust_id": 10,
+    "type": "business",
+    "fed_id": "12-3456789",
+    "address": "742 Evergreen Terrace",
+    "city": "New York",
+    "state": "NY",
+    "postal_code": "10001",
+    "name": "GlobalTech Solutions LLC",
+    "state_id": "NY-458796",
+    "incorp_date": "2008-04-15",
+    "officer": [
+      {
+        "officer_id": 101,
+        "first_name_off": "Michael",
+        "last_name_off": "Johnson",
+        "title": "CEO",
+        "start_date": "2010-01-10"
+      },
+      {
+        "officer_id": 102,
+        "first_name_off": "Laura",
+        "last_name_off": "Williams",
+        "title": "President",
+        "start_date": "2012-06-01",
+        "end_date": "2018-12-31"
+      },
+      {
+        "officer_id": 103,
+        "first_name_off": "David",
+        "last_name_off": "Brown",
+        "start_date": "2019-03-15"
+      }
+    ]
+  }
+}
