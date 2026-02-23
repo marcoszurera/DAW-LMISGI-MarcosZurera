@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "cifp": {
+      "type": "object",
+      "properties": {
+        "alumnes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/alumne" }
+        },
+        "professors": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/professor" }
+        }
+      },
+      "required": ["alumnes", "professors"]
+    }
+  },
+  "$defs": {
+    "alumne": {
+      "type": "object",
+      "required": ["id", "nom", "llinatges", "data_matricula", "curs"],
+      "properties": {
+        "id": { "type": "integer" },
+        "nom": { "type": "string" },
+        "llinatges": { "type": "string" },
+        "data_matricula": { "type": "string" },
+        "curs": { "enum": ["DAM", "DAW", "ASIX", "SMX", "SEIA", "ER", "AUT"] }
+      }
+    },
+    "professor": {
+      "type": "object",
+      "required": ["id", "nom", "llinatges", "data_incorporacio", "departament"],
+      "properties": {
+        "id": { "type": "integer" },
+        "nom": { "type": "string" },
+        "llinatges": { "type": "string" },
+        "data_incorporacio": { "type": "string" },
+        "departament": { "enum": ["Informàtica", "Electricitat", "Automoció"] },
+        "assignatures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id_assignatura", "nom_assignatura", "cicle"],
+            "properties": {
+              "id_assignatura": { "type": "integer" },
+              "nom_assignatura": { "type": "string" },
+              "cicle": { "enum": ["DAM", "DAW", "ASIX", "SMX", "SEIA", "ER", "AUT"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}
