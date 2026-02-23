@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cifp SYSTEM "cifp.dtd">
+<cifp>
+    <alumne id="101">
+        <nom>Andreu</nom>
+        <llinatges>Serra Oliver</llinatges>
+        <data_naixement>2004-12-20</data_naixement>
+        <correu>andreu@ejemplo.com</correu>
+        <data_matricula>2023-09-15</data_matricula>
+        <curs>ASIX</curs>
+    </alumne>
+
+    <professor id="201">
+        <nom>Bernat</nom>
+        <llinatges>López Martí</llinatges>
+        <data_incorporació>2015-09-01</data_incorporació>
+        <departament>Informàtica</departament>
+        <assignatura id_assignatura="50">
+            <nom_assignatura cicle="DAM">Programació</nom_assignatura>
+            <data_inici>2023-09-20</data_inici>
+        </assignatura>
+    </professor>
+</cifp>
